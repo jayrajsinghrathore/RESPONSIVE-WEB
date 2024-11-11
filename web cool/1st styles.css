@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+#main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#left{
+  position: relative;
+  width: 40%;
+  height: 100%;
+ 
+}
+
+#left #textcenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#textcenter h1{
+  font-size: 80px;
+  font-weight: 900;
+}
+
+#textcenter p{
+  opacity: .6;
+  font-size: 19px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#textcenter a{
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+  font-size: 19px;
+  font-weight: 600px;
+  opacity: .6;
+}
+
+#lnav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+#lnavr a{
+   margin-right: 20px;
+   text-decoration: none;
+   color: black;
+   font-weight: 500;
+   font-size: 15px;
+}
+
+#right{
+  width: 60%;
+  height: 100%;
+  background-color: white;
+
+}
+
+#rtop{
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-color: black;
+}
+
+#rtopleft{
+  width: 55%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1490885578174-acda8905c2c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGluZWFwcGxlfGVufDB8fDB8fHww);  
+  background-size: cover;
+  background-position: center;
+}
+
+#rtopright{
+  width: 45%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1582979512210-99b6a53386f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b3JhbmdlfGVufDB8fDB8fHww);
+  background-size: contain; 
+  background-position: center;
+}
+
+#rbottom{
+  width: 100%;
+  height: 50%;
+  background-image: url(https://plus.unsplash.com/premium_photo-1673518604468-d9d697fb3dce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHZlcnRpY2xlJTIwZnJ1aXRzfGVufDB8fDB8fHww);
+  background-size: cover;
+  background-position: center;
+}
+
+@media(max-width: 500px){
+   #main{
+    flex-direction: column;
+   }
+   #main #left{
+    width: 100%;
+   }
+   #main #right{
+    width: 100%;
+   }
+}
